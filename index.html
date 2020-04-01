@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Batman 2021 - About film</title>
+  <title>CinemaPulse</title>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700&display=swap&subset=cyrillic"
+    rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,900&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/short-info.css">
+  <link rel="stylesheet" href="css/full-info.css">
+  <link rel="stylesheet" href="css/adaptive.css">
 </head>
-<body>
+
+<body onload="ShowDescription()">
   <section class="container">
-    <header class="header">
-      <section class="logo">CinemaPulse</section>
+    <header id="header" class="header">
+      <section class="logo">
+        <img src="img/lion_gold.svg" class="logo-image">
+      </section>
       <form action="" class="search">
         <input type="search" class="search-input" placeholder="Films and actors">
         <button type="submit" class="search-button">
@@ -18,26 +28,123 @@
         </button>
       </form>
       <section class="user">
-      <button class="bookmark">
-        <img src="img/bookmark.svg">
-      </button>
-      <img src="img/avatar.jpg" class="avatar">  
+        <button class="bookmark">
+          <img src="img/bookmark.svg">
+        </button>
+        <img src="img/avatar.jpg" class="avatar">
       </section>
     </header>
     <!-- /.header -->
     <main class="main">
+      <iframe id="video-trailer" src="https://www.youtube.com/embed/8SOyHktrjGE?start=0&enablejsapi=1" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
       <h1 class="title">Batman</h1>
       <small class="title-en">The Batman</small>
       <section class="info">
         <section class="movie-info">
           <span class="tag">Film</span>
           <span class="country">USA 2021</span>
-          <a href="#" class="more">Watch trailer</a>
+          <span id="play-trailer" class="watch-trailer-button"></span>
+          <span class="play">Watch trailer</span>
         </section>
+        <a href="#" class="more">More</a>
       </section>
       <!-- /.info -->
+
+      <section class="content">
+        <section class="short-info">
+          <section>
+            <img src="img/cover.jpg" class="poster">
+            <button class="button-want_to_watch">Want to watch</button>
+          </section>
+          <section class="actors-list-container">          
+          <h3 class="actors-title">Starred: </h3>
+          <ul class="actors-list">
+            <li class="actors-list-item">Роберт Паттинсон</li>
+            <li class="actors-list-item">Зои Кравиц</li>
+            <li class="actors-list-item">Коллин Фаррелл</li>
+            <li class="actors-list-item">Питер Сарсгаард</li>
+            <li class="actors-list-item">Пол Дано</li>
+            <li class="actors-list-item">Энди Серкис</li>
+            <li class="actors-list-item">Джеффри Райт</li>
+            <li class="actors-list-item">Джон Туртурро</li>
+            <li class="actors-list-item">Макс Карвер</li>
+            <li class="actors-list-item">Кон О'Нилл</li>
+          </ul>
+          </section>
+        </section>
+        <!-- /.short-info -->
+        <section class="full-info">
+          <nav class="tabs">
+            <span href="#" id="description-tab" class="tabs-item tabs-item-active">Description</span>
+            <span href="#" id="reviews-tab" class="tabs-item">Reviews</span>
+            <span href="#" id="premiers-tab" class="tabs-item">Premieres</span>
+            <span href="#" id="actors-tab" class="tabs-item">Actors</span>
+            <span href="#" id="awards-tab" class="tabs-item">Awards</span>
+            <span href="#" id="facts-tab" class="tabs-item">Facts</span>
+            <span href="#" id="sites-tab" class="tabs-item">Sites</span>
+            <span href="#" class="tabs-item">
+              <img src="img/bookmark-orange.svg" alt="" class="bookmark-added">
+            </span>
+          </nav>
+          <section class="full-content">
+            <section class="tabs-content">
+              <p class="text">
+                Предстоящий американский супергеройский фильм, основанный на одноимённых комиксах издательства DC
+                Comics. Картина будет выпущена компанией Warner Bros. и будет перезагрузкой всех фильмов о Бэтмене.
+              </p>
+              <p class="text">
+                Фильм является десятым по счёту фильмом из Расширенной вселенной DC. Режиссёром и сценаристом фильма
+                выступит Мэтт Ривз, а главную роль исполнит Роберт Паттинсон
+              </p>
+              <h4 class="text-title">
+                Разработка
+              </h4>
+              <p class="text">
+                В октябре 2014 года студия Warner Bros. объявила, что в разработке находится сольный фильм о Бэтмене,
+                роль которого вновь исполнит Бен Аффлек. В июле 2015 года сообщалось, что Аффлек ведёт переговоры со
+                студией по поводу постановки фильма и совместного написания сценария с Джеффом Джонсом.
+              </p>
+              <p class="text">
+                После выхода фильма «Бэтмен против Супермена: На заре справедливости» руководитель агентства WME Патрик
+                Уайтсел подтвердил, что Аффлек написал сценарий для сольного фильма о Бэтмене и в настоящий момент его
+                рассматривают студия и DC. В мае 2016 года Джереми Айронс подтвердил, что он появится в фильме про
+                Тёмного Рыцаря.
+              </p>
+              <p class="text">
+                На Comic-Con в Сан-Диего в июле 2016 года было официально подтверждено, что Аффлек станет режиссёром
+                картины. В августе 2016 года на одной из страниц Аффлека в социальных сетях был опубликован тестовый
+                материал, в котором был показан персонаж Детстроук. 8 сентября 2016 года Джефф Джонс подтвердил, что Джо
+                Манганьелло сыграет наёмника Слейда Уилсона, который, возможно, станет главным злодеем фильма.
+              </p>
+            </section>
+            <section class="subscribe">
+              <h4 class="text-title">
+                Subscribe for updates
+              </h4>
+              <section class="email-form">
+                <input type="input" class="email-input" placeholder="Your email">
+                <button class="email-accept">
+                  <img src="img/check.svg">
+                </button>
+              </section>
+              <a href="#" class="banner">
+                <img src="img/banner.jpg">
+              </a>
+            </section>
+          </section>
+          <!-- /.full-content -->
+          </span>
+          <!-- /.full-info -->
+        </section>
+        <!-- /.content -->
     </main>
   </section>
   <!-- /.container -->
+  <script src="js/tab-items.js"></script>
+  <script src="//www.youtube.com/player_api"></script>
+  <script src="js/video-controles.js"></script>
 </body>
+
 </html>

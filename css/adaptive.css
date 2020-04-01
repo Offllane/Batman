@@ -1,0 +1,39 @@
+@media (max-width:1150px)
+{
+  .full-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1050px)
+{
+  .tabs {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 900px)
+{
+  .content {
+    flex-direction: column;
+  }
+
+  .short-info {
+    flex-direction: row;
+    margin-bottom: 15px;
+    justify-content: space-evenly;
+  }
+}
+
+@media(max-width:500px)
+{
+  .short-info{
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .subscribe {
+    margin: auto;
+  }
+}

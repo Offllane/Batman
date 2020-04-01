@@ -1,0 +1,44 @@
+.short-info {
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+}
+
+.poster {
+  display: block;
+  margin-bottom: 20px;
+  width:182px;
+  height: 260px;
+}
+
+.button-want_to_watch {
+  background: #ff8f27;
+  border: none;
+  width: 184px;
+  height: 36px;
+  padding: 10px 44px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.actors-title {
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 900;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+.actors-list {
+  list-style: none;
+  padding-left: 15px;
+  text-decoration: underline;
+  margin: 0;
+}
+
+.actors-list-item {
+  cursor: pointer;
+}

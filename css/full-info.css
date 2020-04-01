@@ -1,0 +1,89 @@
+.full-info {
+  flex: 0.97;
+}
+
+.tabs {
+  display:flex;
+  justify-content: space-between;
+}
+
+.tabs-item {
+  font-family: "Roboto";
+  color: #000;
+  text-decoration: none;
+  margin-right: 40px;
+  font-size: 18px;
+  line-height: 21px;
+  cursor: pointer;
+}
+
+.tabs-item:last-child {
+  margin: 0;
+}
+
+.tabs-item-active {
+  color: #ff8f27;
+}
+
+.bookmark-added {
+  width:20px;
+  height:20px;
+}
+
+.full-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabs-content {
+  min-width: 515px;
+  margin-right: 10%;
+}
+
+.text {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.text-title {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-right: 0px;
+}
+
+.email-form{
+  display: flex;
+}
+
+.email-input {
+  height: 40px;
+  width: 160px;
+  margin-bottom: 48px;
+  padding-left:15px;
+  border: none;
+  border-radius: 3px 0 0 3px;
+  background-color: #f1f1f1;
+}
+
+.email-accept {
+  height: 42px;
+  width:42px;
+  background-color: #ff8f27;
+  border:none;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+}
+
+.banner {
+  width: 220px;
+  height:276px;
+}
