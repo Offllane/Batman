@@ -1,16 +1,16 @@
-let tabsItems = document.getElementsByClassName("tabs-item");
-let tabsContent = document.querySelector(".tabs-content");
+const tabsItems = document.getElementsByClassName("tabs-item");
+const tabsContent = document.querySelector(".tabs-content");
 
-let descriptionTab = document.getElementById("description-tab");
-let reviewsTab = document.getElementById("reviews-tab");
-let premieresTab = document.getElementById("premiers-tab");
-let actorsTab = document.getElementById("actors-tab");
-let awardsTab = document.getElementById("awards-tab");
-let factsTab = document.getElementById("facts-tab");
-let sitesTab = document.getElementById("sites-tab");
+const descriptionTab = document.getElementById("description-tab");
+const reviewsTab = document.getElementById("reviews-tab");
+const premieresTab = document.getElementById("premiers-tab");
+const actorsTab = document.getElementById("actors-tab");
+const awardsTab = document.getElementById("awards-tab");
+const factsTab = document.getElementById("facts-tab");
+const sitesTab = document.getElementById("sites-tab");
 
 function ClearActiveTab() {
-  for (var i=0; i<tabsItems.length; i++) {
+  for (var i = 0; i < tabsItems.length; i++) {
     tabsItems[i].classList.remove("tabs-item-active");
   }
 }
@@ -67,7 +67,7 @@ function ShowActors() {
   ClearActiveTab();
   actorsTab.classList.add("tabs-item-active");
   let actors = `<p class="text">Actors will be available soon.</p>`;
-  tabsContent.innerHTML=actors;
+  tabsContent.innerHTML = actors;
 }
 
 function ShowAwards() {
@@ -98,3 +98,23 @@ actorsTab.addEventListener("click", ShowActors);
 awardsTab.addEventListener("click", ShowAwards);
 factsTab.addEventListener("click", ShowFacts);
 sitesTab.addEventListener("click", ShowSites);
+
+const burger = document.querySelector('.burger'),
+  tabs = document.querySelector('.tabs');
+
+function slider() {
+  burger.addEventListener('click', () => {
+    tabs.classList.toggle('tabs-active');
+    burger.classList.toggle('toggle');
+
+    links.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `tabsFade 0.5s ease forwards %{index/7 +0.3}s`;
+      }
+    })
+  })
+}
+
+slider();

@@ -4,7 +4,7 @@
 
 .tabs {
   display:flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .tabs-item {
@@ -23,6 +23,19 @@
 
 .tabs-item-active {
   color: #ff8f27;
+}
+
+.burger {
+	display: none;
+	cursor: pointer;
+}
+
+.line {
+	width: 25px;
+	height: 3px;
+	margin: 5px;
+	background-color: black;
+	transition: all 0.4s ease;
 }
 
 .bookmark-added {
@@ -86,4 +99,18 @@
 .banner {
   width: 220px;
   height:276px;
+}
+
+.toggle .line1 {
+transform: rotate(-45deg) translate(-5px, 6px);
+-webkit-transform:rotate(-45deg) translate(-5x, 6px);
+}
+
+.toggle .line2 {
+opacity: 0;
+}
+
+.toggle .line3 {
+transform: rotate(45deg) translate(-5px, -6px);
+-webkit-transform:rotate(45deg) translate(-5px, -6px);
 }

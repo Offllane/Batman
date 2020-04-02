@@ -3,7 +3,6 @@
 let videoTrailer = document.getElementById("video-trailer");
 let playTrailer = document.getElementById("play-trailer");
 let header = document.getElementById("header");
-console.log(playTrailer);
 videoTrailer.classList.add("js-none-display");
 
 function onYouTubePlayerAPIReady() {
