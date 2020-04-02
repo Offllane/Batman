@@ -1,46 +1,31 @@
-@media (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
   .full-content {
     flex-direction: column;
   }
-
-  .burger {
-    display: block;
-  }
-  .tabs {
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    border-radius: 5px;
-    padding: 15px;
-    right: 0;
-    top: 760px;
-    width: 50%;
-    background-color: #0a090a;
-    transform: translateX(100%);
-    transition: transform 0.5s ease-in;
-  }
-
-  .tabs-item {
-    color: white;
-    margin: auto;
-    margin-bottom: 5px;
-  }
-
-  .tabs-item-active {
-    color: orange;
-  }
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1040px) {
   .tabs {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-} */
+  .tabs-item {
+    margin-bottom: 15px;
+  }
+
+  .logo-image {
+    height: 130px;
+    width: 130px;
+  }
+}
 
 @media (max-width: 900px) {
   .content {
     flex-direction: column;
+  }
+
+  #video-trailer {
+  height: 460px;
   }
 
   .short-info {
@@ -48,34 +33,96 @@
     margin-bottom: 15px;
     justify-content: space-evenly;
   }
-
-  .tabs {
-    top: 1050px;
-  }
-
-  .tabs-content {
-    min-width:400px;
+  .logo-image {
+    height: 100px;
+    width: 100px;
   }
 }
 
 @media (max-width: 650px) {
-  .tabs {
-    top: 900px;
+  .tabs-item:last-child {
+    display: none;
   }
 
-  .tabs-content {
-    min-width:300px;
+  .logo-image {
+    height: 70px;
+    width: 70px;
+  }
+
+  #video-trailer {
+  height: 360px;
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 510px) {
   .content {
     display: block;
-    padding-left: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .avatar {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-image {
+    height: 50px;
+    width: 50px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+
+  .search {
+    flex: 100%;
+    order: 3;
+    margin-bottom: 30px;
+  }
+
+  .info {
+    flex-wrap: wrap;
+  }
+
+  #video-trailer {
+  height: 300px;
   }
 
   .short-info {
+    margin-bottom: 15px;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .poster {
+    width: 80%;
+    height: 80%;
     margin: auto;
+    margin-bottom: 15px;
+  }
+
+  .button-want_to_watch {
+    display: block;
+    margin: auto;
+    width: 80%;
+  }
+
+  .actors-list-container {
+    display: none;
+  }
+
+  .tabs {
+    flex-direction: column;
+  }
+
+  .tabs-item {
+    margin-bottom: 5px;
+    margin: auto;
+  }
+
+  .tabs-item:last-child {
+    display: none;
   }
 
   .subscribe {
@@ -83,22 +130,12 @@
   }
 }
 
-.tabs-active {
-  transform: translateX(0%);
-}
-
-@media (max-width:400px)
-{
-
-}
-
-@keyframes tabsFade {
-  from {
-    opacity: 0;
-    transform: translateX(50px);
+@media (max-width: 400px) {
+  .tabs-content {
+    margin-right: 0;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0px);
+
+  .banner img {
+    width: 220px;
   }
 }

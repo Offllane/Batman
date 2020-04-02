@@ -98,23 +98,3 @@ actorsTab.addEventListener("click", ShowActors);
 awardsTab.addEventListener("click", ShowAwards);
 factsTab.addEventListener("click", ShowFacts);
 sitesTab.addEventListener("click", ShowSites);
-
-const burger = document.querySelector('.burger'),
-  tabs = document.querySelector('.tabs');
-
-function slider() {
-  burger.addEventListener('click', () => {
-    tabs.classList.toggle('tabs-active');
-    burger.classList.toggle('toggle');
-
-    links.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = '';
-      } else {
-        link.style.animation = `tabsFade 0.5s ease forwards %{index/7 +0.3}s`;
-      }
-    })
-  })
-}
-
-slider();

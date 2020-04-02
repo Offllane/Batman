@@ -70,7 +70,7 @@ body {
 }
 
 .watch-trailer-button {
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   background-image: url(../img/play.svg);
   background-repeat: no-repeat;
@@ -109,8 +109,8 @@ body {
 }
 
 #video-trailer {
-  width: 900px;
-  height: 530px;
+  width: 90%;
+  height: 560px;
   margin: auto;
 }
 

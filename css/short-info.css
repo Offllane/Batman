@@ -15,8 +15,9 @@
   background: #ff8f27;
   border: none;
   width: 184px;
-  height: 36px;
+  min-height: 36px;
   padding: 10px 44px;
+  margin-bottom: 16px;
   color: #fff;
   font-size: 14px;
   line-height: 16px;

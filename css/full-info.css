@@ -5,6 +5,7 @@
 .tabs {
   display:flex;
   justify-content: space-evenly;
+  margin-bottom: 16px;
 }
 
 .tabs-item {
@@ -23,11 +24,6 @@
 
 .tabs-item-active {
   color: #ff8f27;
-}
-
-.burger {
-	display: none;
-	cursor: pointer;
 }
 
 .line {
@@ -49,7 +45,7 @@
 }
 
 .tabs-content {
-  min-width: 515px;
+  min-width: 200px;
   margin-right: 10%;
 }
 
@@ -99,18 +95,4 @@
 .banner {
   width: 220px;
   height:276px;
-}
-
-.toggle .line1 {
-transform: rotate(-45deg) translate(-5px, 6px);
--webkit-transform:rotate(-45deg) translate(-5x, 6px);
-}
-
-.toggle .line2 {
-opacity: 0;
-}
-
-.toggle .line3 {
-transform: rotate(45deg) translate(-5px, -6px);
--webkit-transform:rotate(45deg) translate(-5px, -6px);
 }

@@ -5,20 +5,6 @@ let playTrailer = document.getElementById("play-trailer");
 let header = document.getElementById("header");
 videoTrailer.classList.add("js-none-display");
 
-function onYouTubePlayerAPIReady() {
-  player = new YT.Player('Youtube', {
-    events: {
-      'onReady': onPlayerReady
-    }
-  });
-}
-
-function onPlayerReady(event) {
-  playTrailer.addEventListener("click", function () {
-    player.pauseVideo();
-  });
-}
-
 function ShowOrHireTrailer() {
   if (videoTrailer.classList.contains("js-none-display"))
     {
@@ -33,7 +19,6 @@ function ShowOrHireTrailer() {
       videoTrailer.classList.add("js-none-display");
       header.style.marginBottom ="30%";
       playTrailer.style.backgroundImage = "url(../img/play.svg)";
-      player.pauseVideo();
     }
 }
 
